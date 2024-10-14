@@ -14,11 +14,15 @@ export class DashboardComponent implements OnInit {
   constructor(private filmeService: FilmeService) { }
 
   ngOnInit() {
+    this.carregarFilmes();
+  }
+
+  carregarFilmes() {
     this.filmeService.getFilmes().subscribe((data: Filme[]) => {
       this.filmes = data;
     });
-
   }
+  
 
 
 }
