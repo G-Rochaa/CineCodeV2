@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Filme } from 'src/app/models/filme';
-import { FilmeService } from 'src/app/services/filme.service';
+import { Filme } from 'src/app/shared/models/filme';
+import { FilmeService } from 'src/app/shared/services/filme.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
   }
 
   carregarFilmes() {
-    this.filmeService.getFilmes().subscribe((data: Filme[]) => {
+    this.filmeService.getFilmesMock().subscribe((data: Filme[]) => {
       this.filmes = data;
     });
   }

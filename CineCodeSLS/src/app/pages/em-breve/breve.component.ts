@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Filme } from 'src/app/models/filme';
-import { FilmeService } from 'src/app/services/filme.service';
+import { MatDialog } from '@angular/material/dialog';
+import { Filme } from 'src/app/shared/models/filme';
+import { FilmeService } from 'src/app/shared/services/filme.service';
 
 @Component({
   selector: 'app-breve',
@@ -13,9 +14,8 @@ export class BreveComponent implements OnInit {
   constructor(private filmeService: FilmeService) { }
 
   ngOnInit() {
-    this.filmeService.getFilmes().subscribe((data: Filme[]) => {
+    this.filmeService.getFilmesMock().subscribe((data: Filme[]) => {
       this.filmes = data;
     });
-
   }
 }

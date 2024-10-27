@@ -4,7 +4,7 @@ export interface Filme {
     id: number;
     titulo: string;
     anoLancamento: Date; 
-    autor: string;
+    diretor: string;
     duracao: Time;   
     statusFilme: number;
     sinopse: string;

@@ -8,10 +8,9 @@
             <div class="movie-info">
                 <h3>{{ filme.titulo }}</h3>
                 <p>{{filme.sinopse}}</p>
-                <p>{{filme.classificacao}}</p>
-                <button>Em Breve</button>
-            </div>
+                <p> Classificação: {{filme.classificacao}}</p>
+                <button class="btn btn-info" [routerLink]="['/filme', filme.id]">Ver Detalhes</button>           
+             </div>
         </div>
-        
     </div>
 </section>

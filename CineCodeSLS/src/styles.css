@@ -1,14 +1,28 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-/* Estilos globais */
 :host {
   display: block;
-  background-color: #01101d; /* Azul fosco */
+  background-color: #01101d; 
   color: white;
   height: 100vh;
 }
 
-/* Estilos de input com ícone */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #01101d;
+}
+
+.container {
+  background-color: #01101d;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+p, h2 {
+  color: white;
+}
+
 .input-group .input-group-text {
   background-color: #01101d;
   border: none;
@@ -19,40 +33,47 @@
   border-radius: 0;
   background-color: #01101d;
   color: white;
-  border: 1px solid #b0b0b0; /* Cor da borda */
+  border: 1px solid #b0b0b0;
 }
 
 .input-group .form-control::placeholder {
-  color: #b0b0b0; /* Cor do placeholder */
+  color: #b0b0b0;
 }
 
-/* Estilo dos botões dropdown e do botão "Acesse ou Registre-se" */
 .dropdown .btn.dropdown-toggle,
 .btn-custom {
-    background-color: #01101d; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove bordas */
-    box-shadow: none; /* Remove sombras */
-    border-radius: 0; /* Remove arredondamento */
-    transition: none; /* Remove transições */
+  background-color: #01101d;
+  color: white;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: none;
 }
 
-/* Remover alterações de estilo ao passar o mouse */
 .dropdown .btn.dropdown-toggle:hover,
 .dropdown .btn.dropdown-toggle:focus,
 .dropdown .btn.dropdown-toggle:active,
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active {
-    background-color: #01101d; /* Mantém a cor de fundo */
-    color: white; /* Mantém a cor do texto */
-    box-shadow: none; /* Remove sombras */
-    border: none; /* Mantém sem borda */
-    transition: none; /* Sem animações */
+  background-color: #01101d;
+  color: white;
+  box-shadow: none;
+  border: none;
+  transition: none;
 }
 
 .app-footer {
-  background-color: #01101d; /* Azul escuro */
-  color: #ffffff; /* Texto branco */
-  padding: 20px; /* Ajuste o padding conforme necessário */
+  background-color: #01101d;
+  color: #ffffff;
+  padding: 20px;
+}
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
